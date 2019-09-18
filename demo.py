@@ -70,7 +70,7 @@ def get_private_uesr(api_key , secret_key):
 
 def get_trade_limit(api_key , market , side , amount , trade_type , secret_key):
     #限价交易
-    url = BASE_URL + '/trade/limit'
+    url = BASE_URL + '/private/trade/limit'
     params=dict()
     params['api_key'] = api_key
     params['market'] = market
