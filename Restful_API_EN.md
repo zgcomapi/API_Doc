@@ -785,7 +785,7 @@ type| trading type，1=限价limit price，2=market price
 user| user ID
 ---------------------
 
-# 注Notice
+# Notice
 * Each IP is allowed to access maximum 1500 times per minute in version * v1 interface User-Agent must be added when request Headers
 
 
