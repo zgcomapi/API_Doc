@@ -62,7 +62,7 @@ timestamp | 1499827319559
 
     ```
     (HMAC SHA256)
-    [linux]$ curl -H "X-MBX-APIKEY: vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A" -X POST 'https://api.binance.com/api/v3/order' -d 'symbol=BTC_USDT&side=BUY&type=LIMITquantity=1&price=0.1&timestamp=1499827319559&signature=4c8bdb0a6a05e4403d8e5fbc9a9cd435670dc3a4822ca53216914fb6fe32f3ad'
+    [linux]$ curl -H "X-MBX-APIKEY: vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A" -X POST 'https://api.zg.com/api/external/engine/v1/new_order' -d 'symbol=BTC_USDT&side=BUY&type=LIMITquantity=1&price=0.1&timestamp=1499827319559&signature=4c8bdb0a6a05e4403d8e5fbc9a9cd435670dc3a4822ca53216914fb6fe32f3ad'
     ```
 
 
@@ -99,7 +99,7 @@ timestamp | LONG | YES |
 
     ```
     (HMAC SHA256)
-    [linux]$ curl -H "X-MBX-APIKEY: vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A" -X GET 'https://api.binance.com/api/v3/order?symbol=BTC_CNZ&timestamp=46234764637&order_id=cfe03b64574240b58baeb61108633927&signature=5c68bae55c3a314d3fd65879d932a169d60ff937324ef3e54398d6cfa2ac142b'
+    [linux]$ curl -H "X-MBX-APIKEY: vmPUZE6mv9SD5VNHk4HlWFsOr6aKE2zvsw0MuIgwCIPy6utIco14y7Ju91duEh8A" -X GET 'https://api.zg.com/api/external/engine/v1/get_orders?symbol=BTC_CNZ&timestamp=46234764637&order_id=cfe03b64574240b58baeb61108633927&signature=5c68bae55c3a314d3fd65879d932a169d60ff937324ef3e54398d6cfa2ac142b'
     ```
 
 
