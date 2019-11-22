@@ -8,7 +8,7 @@
 ## 逐笔交易
 逐笔交易推送每一笔成交的信息。
 
-**reuqest 内容:** \<symbol\>@trade
+**reuqest 内容:** {"type":"\<symbol\>@trade"}
 
 **Payload:**
 ```javascript
@@ -29,7 +29,7 @@
 ## K线
 K线stream逐秒推送所请求的K线种类(最新一根K线)的更新
 
-**订阅Kline需要提供间隔参数。支持以下间隔:**
+**订阅Kline需要提供间隔参数。支持以下间隔(interval):**
 
 m -> 分钟; h -> 小时; d -> 天;
 
@@ -44,7 +44,7 @@ m -> 分钟; h -> 小时; d -> 天;
 * 7d
 * 30d
 
-**Stream 名称:** \<symbol\>@klines_\<interval\>
+**Stream 名称:** {"type":"\<symbol\>@klines_\<interval\>"}
 
 **Payload:**
 ```javascript
@@ -71,7 +71,7 @@ m -> 分钟; h -> 小时; d -> 天;
 ## 按Symbol的精简Ticker
 按Symbol逐秒刷新精简ticker信息
 
-**Stream 名称:** \<symbol\>@miniTicker
+**Stream 名称:** {"type":"\<symbol\>@miniTicker"}
 
 **Payload:**
 ```javascript
@@ -91,7 +91,7 @@ m -> 分钟; h -> 小时; d -> 天;
 ## 全市场所有Symbol的精简Ticker
 同上，只是推送所有交易对
 
-**Stream名称:** @allMiniTicker
+**Stream名称:** {"type":"@allMiniTicker"}
 
 **Payload:**
 ```javascript
@@ -105,7 +105,7 @@ m -> 分钟; h -> 小时; d -> 天;
 ## 按Symbol的完整Ticker
 按Symbol逐秒刷新的24小时完整ticker信息
 
-**Stream 名称:** \<symbol\>@ticker
+**Stream 名称:** {"type":"\<symbol\>@ticker"}
 
 **Payload:**
 ```javascript
@@ -134,7 +134,7 @@ m -> 分钟; h -> 小时; d -> 天;
 ## 全市场所有交易对的完整Ticker
 同上，只是推送所有交易对
 
-**Stream名称:** @allTicker
+**Stream名称:** {"type":"@allTicker"} 
 
 **Payload:**
 ```javascript
@@ -150,7 +150,7 @@ m -> 分钟; h -> 小时; d -> 天;
 ## 增量深度信息stream
 每秒推送orderbook的变化部分（如果有）
 
-**Stream 名称:** \<symbol\>@depth
+**Stream 名称:** {"type":"\<symbol\>@depth"}
 
 **Payload:**
 ```javascript
