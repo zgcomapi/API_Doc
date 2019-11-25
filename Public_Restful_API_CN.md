@@ -105,20 +105,7 @@ timestamp | LONG | YES |
 
 # 公开API接口
 
-**K线间隔:**
 
-1 -> 1分钟;
-5 -> 5分钟;
-15 -> 15分钟;
-30 -> 30分钟;
-60 -> 1小时;
-240 -> 4小时;
-60 -> 1小时;
-240 -> 4小时;
-D -> 1天;
-5D -> 5天;
-7D -> 7天;
-30D -> 30天;
 
 
 ### 交易对基础信息
@@ -231,15 +218,28 @@ limit | INT | NO | Default 500; max 1000.
 GET /market/api/v1/klines
 ```
 
+**K线间隔,resolution:**
+1 -> 1分钟;
+5 -> 5分钟;
+15 -> 15分钟;
+30 -> 30分钟;
+60 -> 1小时;
+240 -> 4小时;
+60 -> 1小时;
+240 -> 4小时;
+D -> 1天;
+5D -> 5天;
+7D -> 7天;
+30D -> 30天;
 **参数:**
 
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
 resolution | ENUM | YES |
-from | LONG | NO |
-to | LONG | NO |
-limit | INT | NO | Default 500; max 1000.
+from | LONG | YES |
+to | LONG | YES |
+limit | INT | YES | Default 500; max 1000.
 
 * 缺省返回最近的数据
 
@@ -254,7 +254,7 @@ limit | INT | NO | Default 500; max 1000.
         "o":[97.36],//开盘价
         "h":[146.59],//最高价
         "l":[96],//最低价
-        "v":[814026.4405]//成交量
+        "v":[814026.4405]//成交量
     }
 }
 ```
@@ -313,7 +313,7 @@ timestamp | LONG | YES |
     "symbol":"BTC_CNZ",//交易对
     "order_id":"cfe03b64574240b58baeb61108633927",//订单id
     "client_request_id":"c8987fce-0092-11ea-96bd-1ea1c892e80d",//请求id
-    "price":"10",//委托价格
+    "price":"10",//委托价格
     "orig_qty":"1",//委托数量
     "executed_qty":"1",//成交数量
     "cummulative_quote_qty":"0",
@@ -335,7 +335,7 @@ POST /api/external/engine/v1/cancel_order  (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-orderId | LONG | NO |
+orderId | LONG | YES |
 timestamp | LONG | YES |
 
 
@@ -344,8 +344,8 @@ timestamp | LONG | YES |
 {
   "symbol": "LTC_BTC",//交易对
   "order_id": "cfe03b64574240b58baeb61108633927",//订单id
-  "client_request_id": "c8987fce-0092-11ea-96bd-1ea1c892e80d",//请求id
-  "price": "1.00000000",//委托价格
+  "client_request_id": "c8987fce-0092-11ea-96bd-1ea1c892e80d",//请求id
+  "price": "1.00000000",//委托价格
   "orig_qty": "10.00000000",//委托数量
   "executed_qty": "8.00000000",//成交数量
   "order_type": "LIMIT",//订单类型
@@ -375,7 +375,7 @@ timestamp | LONG | YES |
         "symbol":"BTC_CNZ",//交易对
         "order_id":"06a53678af544b99b3a3917e6b748db5",//订单id
         "client_request_id":"b88eb3b1-0161-11ea-b8b5-52ccdae897ca",//请求id
-        "price":"10",//委托价格
+        "price":"10",//委托价格
         "orig_qty":"1",//委托数量
         "executed_qty":"1",//成交数量
         "cummulative_quote_qty":"0",
@@ -409,8 +409,8 @@ timestamp | LONG | YES |
     {
         "symbol":"BTC_CNZ",//交易对
         "order_id":"06a53678af544b99b3a3917e6b748db5",//订单id
-        "client_request_id":"b88eb3b1-0161-11ea-b8b5-52ccdae897ca",//请求id
-        "price":"10",//委托价格
+        "client_request_id":"b88eb3b1-0161-11ea-b8b5-52ccdae897ca",//请求id
+        "price":"10",//委托价格
         "orig_qty":"1",//委托数量
         "executed_qty":"1",//成交数量
         "cummulative_quote_qty":"0",
@@ -479,7 +479,7 @@ timestamp | LONG | YES |
         "price":"100",//成交价格
         "qty":"1",////成交数量
         "commission":"0",//手续费
-        "commission_asset":"",//手续费币种
+        "commission_asset":"",//手续费币种
         "time":1569833792295,//成交时间
         "is_buyer":false,//是否是buyer
         "is_maker":true//是否是maker
