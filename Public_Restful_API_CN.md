@@ -259,8 +259,8 @@ limit | INT | YES | Default 500; max 1000.
 }
 ```
 
+# 鉴权API接口
 
-## 账户接口
 ### 下单  (TRADE)
 ```
 POST /api/external/engine/v1/new_order (HMAC SHA256)
