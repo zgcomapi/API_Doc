@@ -453,7 +453,7 @@ timestamp | LONG | YES |
 
 ### 账户成交历史 (USER_DATA)
 ```
-GET /api/internal/engine/v1/get_trades (HMAC SHA256)
+GET /api/external/engine/v1/get_trades (HMAC SHA256)
 ```
 获取某交易对的成交历史
 
