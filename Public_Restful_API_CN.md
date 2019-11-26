@@ -400,7 +400,7 @@ Name | Type | Mandatory | Description
 symbol | STRING | YES |
 startTime | LONG | NO |
 endTime | LONG | NO |
-limit | INT | NO | Default 500; max 1000.
+limit | INT | YES | Default 500; max 1000.
 timestamp | LONG | YES |
 
 **响应:**
@@ -466,7 +466,7 @@ symbol | STRING | YES |
 start_time | LONG | NO |
 end_time | LONG | NO |
 order_id | STRING | NO |
-limit | INT | NO | Default 500; max 1000.
+limit | YES | NO | Default 500; max 1000.
 timestamp | LONG | YES |
 
 **响应:**
