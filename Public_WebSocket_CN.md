@@ -1,6 +1,6 @@
 # Web Socket 行情接口(2019-11-21)
 # 基本信息
-* 本篇所列出的所有wss接口的baseurl为: **wss://zg.com/connect**
+* 本篇所列出的所有wss接口的baseurl为: **wss://stream.zg.com/connect**
 * 每个到**zg.com**的链接有效期不超过4小时，请妥善处理断线重连。
 * 每1分钟,客户端需要主动发送PING消息给服务端,保持心跳连接,服务在超过一定时间未收到PING消息会将把客户端踢下线。
 
