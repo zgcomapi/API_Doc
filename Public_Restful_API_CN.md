@@ -1,6 +1,6 @@
 # REST行情与交易接口 (2019-11-20)
 # 基本信息
-* 本篇列出REST接口的baseurl **https://api.zg.com**
+* 本篇列出REST接口的baseurl **https://www.zg.com**
 * 所有接口的响应都是JSON格式
 * 所有时间、时间戳均为UNIX时间，单位为毫秒
 
