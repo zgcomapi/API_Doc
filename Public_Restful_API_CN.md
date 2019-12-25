@@ -277,6 +277,7 @@ order_type | INT | YES |
 quantity | DECIMAL | YES |
 price | DECIMAL | NO |
 timestamp | LONG | YES |
+client_request_id | STRING | YES |
 
 
 **响应:**
@@ -338,6 +339,7 @@ Name | Type | Mandatory | Description
 symbol | STRING | YES |
 orderId | LONG | YES |
 timestamp | LONG | YES |
+client_request_id | STRING | YES
 
 
 **响应:**
