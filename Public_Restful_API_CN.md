@@ -272,8 +272,8 @@ POST /api/external/engine/v1/new_order (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-side | INT | YES |
-order_type | INT | YES |
+side | STRING | YES |
+order_type | STRING | YES |
 quantity | DECIMAL | YES |
 price | DECIMAL | NO |
 timestamp | LONG | YES |
