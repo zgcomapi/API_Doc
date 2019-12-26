@@ -272,10 +272,10 @@ POST /api/external/engine/v1/new_order (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-side | STRING | YES |
-order_type | STRING | YES |
-quantity | DECIMAL | YES |
-price | DECIMAL | NO |
+side | STRING | YES | BUY or SELL
+order_type | STRING | YES | LIMIT or MARKET
+quantity | DECIMAL | YES | 
+price | DECIMAL | NO | LIMIT order is mandatory
 timestamp | LONG | YES |
 client_request_id | STRING | YES | 用户请求id（为保证唯一性，推荐使用uuid v4版本生成此id）
 
