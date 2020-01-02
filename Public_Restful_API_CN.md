@@ -301,7 +301,7 @@ GET /api/external/engine/v1/get_orders (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-orderId | LONG | NO |
+order_id | LONG | NO |
 client_request_id | STRING | NO |
 timestamp | LONG | YES |
 
@@ -337,7 +337,7 @@ POST /api/external/engine/v1/cancel_order  (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-orderId | LONG | YES |
+order_id | LONG | YES |
 timestamp | LONG | YES |
 client_request_id | STRING | YES | 用户请求id（为保证唯一性，推荐使用uuid v4版本生成此id）
 
