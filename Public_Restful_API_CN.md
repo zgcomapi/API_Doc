@@ -81,7 +81,7 @@ secretKey | NhqPtmdSJYdKjVHjA7PZj4Mge3R5YNiP1e3UZjInClVN65XAbvqqM6A7H5fATj0j
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-orderId | LONG | NO |
+order_id | LONG | NO |
 client_request_id | STRING | NO |
 timestamp | LONG | YES |
 
@@ -306,7 +306,7 @@ client_request_id | STRING | NO |
 timestamp | LONG | YES |
 
 注意:
-* 至少需要发送 `orderId` 与 `client_request_id`中的一个
+* 至少需要发送 `order_id` 与 `client_request_id`中的一个
 
 
 **响应:**
