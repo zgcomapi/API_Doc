@@ -286,7 +286,7 @@ client_request_id | STRING | YES | 用户请求id（为保证唯一性，推荐�
     "symbol":"BTC_USDT",//交易对
     "order_id":"9714e0b005c846a0b2be7acb228a485d",//订单id
     "client_request_id":"495db148-0b69-11ea-aa36-8a4452f6fd73",//请求id
-    "transactTime":1574235741996//处理时间
+    "transact_time":1574235741996//处理时间
 }
 ```
 
@@ -353,7 +353,7 @@ client_request_id | STRING | YES | 用户请求id（为保证唯一性，推荐�
   "executed_qty": "8.00000000",//成交数量
   "order_type": "LIMIT",//订单类型
   "side": "SELL",//买卖方向
-  "transactTime": 1507725176595//处理时间
+  "transact_time": 1507725176595//处理时间
 }
 ```
 
