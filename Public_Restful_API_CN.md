@@ -301,7 +301,7 @@ GET /api/external/engine/v1/get_orders (HMAC SHA256)
 Name | Type | Mandatory | Description
 ------------ | ------------ | ------------ | ------------
 symbol | STRING | YES |
-order_id | LONG | NO |
+order_id | STRING | NO |
 client_request_id | STRING | NO |
 timestamp | LONG | YES |
 
