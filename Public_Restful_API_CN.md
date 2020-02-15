@@ -138,7 +138,6 @@ NONE
     ]
 }
 ```
-
 ## 行情接口
 ### 深度信息
 ```
@@ -259,6 +258,35 @@ limit | INT | YES | Default 500; max 1000.
   ]
 }
 ```
+
+### 维护接口
+```
+GET /internal/exchange/manage/v1/get_status
+```
+获取市场状态
+
+**参数:**
+
+
+**响应:**
+```javascript
+{
+    "server_time":1581734627, //服务器时间
+    "exchange_status":[
+        {
+            "exchange_type":1, 
+            "exchange_name":"spot", //现货
+            "status":2 //1:维护 2:正常
+        },
+        {
+            "exchange_type":2,
+            "exchange_name":"contract", //合约
+            "status":2,//1:维护 2:正常
+        }
+    ]
+}
+```
+
 
 # 鉴权API接口
 
